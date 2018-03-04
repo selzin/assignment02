@@ -1,0 +1,76 @@
+body{
+   background-image:url('i.jpg');
+   height:auto;
+   background-attachment: fixed;
+   
+}
+
+.main-body{
+	background-color:white;
+	width: 95%;
+	height:auto;
+	margin:3% 3% 0% 3%;
+	border: 1px solid gray;
+	padding-bottom:10%;
+	opacity:0.9;
+	color:black;
+	text-align:center;
+}
+
+.footer, #com{
+	text-align:center;
+}
+
+
+.footer{
+	background-color:#000033;
+	padding:3% 0% 3% 0%;
+	color:white;
+}
+
+.image-content{
+	position:absolute;
+	left:19%;
+}
+
+.video-content{
+	position:absolute;
+	right:19%;
+}
+
+#com{
+	padding-top:13%;
+	font-size:120%;
+	font-weight:bold;
+	text-decoration:underline;
+}
+
+ol{
+	padding-top:20%;
+	font-weight:bold;
+
+}
+
+.reference{
+	padding-top:20%;
+	font-size:120%;
+	font-weight:bold;
+}
+
+marquee{
+	font-size:110%;
+	color:#990000;
+	font-weight:bold;
+}
+
+.welcome{
+	position:absolute;
+	left:5%;
+	padding-top:3%;
+}
+
+.threed{
+	position:absolute;
+	right:5%;
+	padding-top:0.5%;
+}
