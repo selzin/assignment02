@@ -66,12 +66,46 @@
 	     <p id="com">Differences between GIF and MP4 file</p>
 	   </div>
 	   
-	   <div class="reference">
+	   <div class="algo" >	   
 	   
-	   <p><a href="https://www.mathworks.com/help/matlab/ref/load.html">References</a></p>
-	   
+	   <p id="algo">A Report of the Algorithmic Steps</p>	   
+	 
+	<pre>
+    imagefiles = dir('*.jpg');%Get list of all JPG files in this directory
+
+       nfiles = length(imagefiles); % Number of files found
+
+       for i=1:nfiles% read all the images
+         currentfilename = imagefiles(i).name;
+         currentimage = imread(currentfilename);
+         images{i} = currentimage;   
+	     % imshow(images{i}); % display the images  
+	   end
+
+	    % write to a GIF file
+		
+		% Name of the file that we want to saved
+	    FileName = 'gifImage.gif';
+
+	    for k = 1:nfiles		
+	     % convert rgb color image to gray since it reads only 2D
+		 im = rgb2gray(images{k});
+		
+	 if k ==1
+	 % For 1st image, start the 'LoopCount'.
+	imwrite(im,FileName,'gif','LoopCount',Inf,'DelayTime',0.1);
+	 else
+	  %appending more than one images
+	imwrite(im,FileName,'gif','WriteMode','append','DelayTime',0.1);
+	 end
+	end
+    </pre>		 
 	   
 	   </div>
+	   
+	   <div class="reference">
+	     <p><a href="https://www.mathworks.com/help/matlab/ref/load.html">References</a></p>
+	</div>
 	   
     </div>
 	

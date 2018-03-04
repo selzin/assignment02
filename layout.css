@@ -11,7 +11,7 @@ body{
 	height:auto;
 	margin:3% 3% 0% 3%;
 	border: 1px solid gray;
-	padding-bottom:10%;
+	padding-bottom:7%;
 	opacity:0.9;
 	color:black;
 	text-align:center;
@@ -52,7 +52,7 @@ ol{
 }
 
 .reference{
-	padding-top:20%;
+	padding-top:7%;
 	font-size:120%;
 	font-weight:bold;
 }
@@ -73,4 +73,20 @@ marquee{
 	position:absolute;
 	right:5%;
 	padding-top:0.5%;
+}
+
+#algo{
+	text-decoration:underline;
+	font-weight:bold;
+	color:#248f24;
+}
+
+.algo{
+	
+	font-size:120%;
+	font-weight:bold;
+	border: 1px solid black;
+	margin: 20% 20% 0% 20%;
+	text-align: center;
+	padding-right:10%;		
 }
